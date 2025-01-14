@@ -1,0 +1,16 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("POSTGRES_URL")
+}
+
+//ejemplo de como se crea una tabla en prisma
+// model fcpy_companies {
+//   name       String?   @db.VarChar(50)
+//   created_at DateTime? @db.Timestamp(6)
+//   updated_at DateTime? @db.Timestamp(6)
+//   id         Int       @id @default(autoincrement())
+// }
